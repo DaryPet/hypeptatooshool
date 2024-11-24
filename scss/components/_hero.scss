@@ -1,0 +1,172 @@
+@use '../base/variables';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 51px 0 80px 20px;
+    color: variables.$white;
+    min-height: 100vh;
+
+    background-image: url('../../images/background-mob.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    &__top-vectors {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 51px;
+    }
+
+    &__top-text {
+        width: 121.072px;
+        color: variables.$black;
+        text-align: center;
+        font-family: variables.$font-primary;
+        font-size: 8.965px;
+        font-style: normal;
+        font-weight: variables.$font-weight-semibold;
+        line-height: 111%;
+        letter-spacing: -0.269px;
+    }
+
+    &__vector1 {
+        width: 52.338px;
+        height: 19.548px;
+        flex-shrink: 0;
+    }
+    &__vector2 {
+        width: 39.096px;
+        height: 17.341px;
+        flex-shrink: 0;
+    }
+    &__title1 {
+        padding: 0 0 0 3px;
+        color: variables.$black;
+        width: 203px;
+        font-family: variables.$font-title;
+        font-size: 62px;
+        font-weight: variables.$font-weight-bold;
+        line-height: 99%;
+        letter-spacing: -1.24px;
+        text-transform: uppercase;
+    }
+
+    &__title2 {
+        padding: 0 0 0 3px;
+        color: variables.$black;
+        width: 260px;
+        font-family: variables.$font-title;
+        font-size: 62px;
+        font-weight: variables.$font-weight-bold;
+        line-height: 99%;
+        letter-spacing: -1.24px;
+        text-transform: uppercase;
+        margin-bottom: 51.86px;
+    }
+    .join-main-container {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        height: 68px;
+        &--modal {
+                justify-content: center;
+                height: 60px; 
+            }
+    }
+    .join-course-container {
+        position: relative;
+        display: inline-block;
+        width: 176px;
+        height: 68px;
+        &--modal {
+                width: 140px;
+                height: 55px; 
+            }
+    }
+        
+    
+        .join-course__text {
+            position: absolute;
+            top: 38%;
+            left: 15%;
+            font-family: variables.$font-primary;
+            font-weight: variables.$font-weight-bold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -0.42px;
+            color: variables.$black;
+            text-transform: uppercase;
+        }
+    
+        .join-course__arrow {
+            position: absolute;
+            width: 9.6px;
+            height: 9.6px;
+
+        }
+    
+        .join-course__arrow--top-left {
+            top: 0;
+            left: 0;
+        }
+    
+        .join-course__arrow--top-right {
+            top: 0;
+            right: 0;
+        }
+    
+        .join-course__arrow--bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+    
+        .join-course__arrow--bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        .join-course-box {
+            position: relative;
+            width: 66.38px;
+            height: 66.38px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .join-course-box:hover .join-course-box__background {
+            background-color: variables.$white;
+        }
+        .join-course-box__background {
+            position: absolute;
+            top: -15%;
+            left: 0;
+            width: 66.38px;
+            height: 66.38px;
+            flex-shrink: 0;
+            background-color: variables.$blue;
+            transition: background-color 0.3s ease;
+        }
+        .join-course-box__arrow {
+            position: absolute;
+            stroke: variables.$black;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 11.46px;
+            height: 12.99px;
+            transition: fill 0.3s ease;
+        }
+}

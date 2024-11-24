@@ -1,0 +1,40 @@
+@use 'variables';
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../../fonts/Mona-Sans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../../fonts/Mona-Sans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../../fonts/Mona-Sans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../../fonts/Mona-Sans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: variables.$font-title;
+    color: variables.$black;
+}
+
+body {
+        font-family: variables.$font-primary;
+        font-weight: variables.$font-weight-semibold;
+        color: variables.$text-primary;
+    }

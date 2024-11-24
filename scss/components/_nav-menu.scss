@@ -1,0 +1,231 @@
+@use '../base/variables';
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$blue;
+    transition: right 0.3s ease;
+    z-index: 10;
+
+    &__content {
+        height: 100%;
+        overflow-y: auto;
+        padding: 45px 20px;
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .nav-menu-text {
+            color: variables.$white;
+            font-family: variables.$font-primary;
+            font-size: 20px;
+            font-weight: variables.$font-weight-bold;
+            line-height: 130%;
+            letter-spacing: -0.6px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu-close-container {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            .nav-menu__close {
+                background: none; 
+                border: none;
+                color: variables.$white;
+                font-size: 20px;
+                font-family: variables.$font-primary;
+                font-weight: variables.$font-weight-bold;
+                cursor: pointer;
+                transition: color 0.3s ease;
+                text-transform: uppercase;
+                line-height: 130%;
+                letter-spacing: -0.6px;
+
+                &:hover {
+                    color: variables.$black;
+                }
+            }
+
+            .nav-menu__close-icon {
+                width: 19px;
+                height: 19px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 40px 0 60px 0;
+        text-align: center;
+
+        .nav-menu__item {
+            margin-bottom: 12px;
+
+            a {
+                text-decoration: none;
+                font-family: variables.$font-primary;
+                font-size: 32px;
+                font-weight: variables.$font-weight-bold;
+                color: variables.$black;
+                transition: color 0.3s ease;
+                    line-height: 130%;
+                    letter-spacing: -0.96px;
+                    text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.active {
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__footer {
+        &-title {
+            font-family: variables.$font-title;
+            font-size: 57px;
+            font-weight: variables.$font-weight-bold;
+            text-transform: uppercase;
+            color: variables.$black;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 99%;
+            letter-spacing: -1.14px;
+        }
+        .join-main-container--modal {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            height: 68px;
+            padding: 0 20px 0 20px;
+            margin-bottom: 52px;
+        }
+        .join-course__background--modal{
+            width: 217px;
+            height: 72px;
+
+        }
+        .join-course-container {
+            position: relative;
+            display: inline-block;
+            width: 217px;
+            height: 72px;
+        }
+        
+        
+        .join-course__text {
+            position: absolute;
+            top: 38%;
+            left: 15%;
+            font-family: variables.$font-primary;
+            font-weight: variables.$font-weight-bold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -0.42px;
+            color: variables.$black;
+            text-transform: uppercase;
+        }
+        
+        .join-course__arrow {
+            position: absolute;
+            width: 9.6px;
+            height: 9.6px;
+        }
+        
+        .join-course__arrow--top-left {
+            top: 0;
+            left: 0;
+        }
+        
+        .join-course__arrow--top-right {
+            top: 0;
+            right: 0;
+        }
+        
+        .join-course__arrow--bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+        
+        .join-course__arrow--bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        
+        .join-course-box--modal {
+            position: relative;
+            width: 71px;
+            height: 71px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        .join-course-box:hover .join-course-box__background {
+             background-color: variables.$white;
+        }
+        
+        .join-course-box__background {
+            position: absolute;
+            top: -15%;
+            left: 0;
+            width: 71px;
+            height: 71px;
+            flex-shrink: 0;
+            background-color: variables.$black;
+            transition: background-color 0.3s ease;
+        }
+        
+        .join-course-box__arrow--modal {
+            position: absolute;
+            stroke: variables.$blue;
+            top: 35%;
+            left: 35%;
+            transform: translate(50%, -50%);
+            width: 12.25px;
+            height: 13.88px;
+            transition: fill 0.3s ease;
+        }
+    
+    }
+    &__contact {
+        color: variables.$white;
+        font-family: variables.$font-primary;
+        
+    }
+    &__mail {
+        text-align: center;
+        font-size: 24px;
+        font-weight: variables.$font-weight-bold;
+        line-height: 130%;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+    }
+    &__legal{
+            text-align: center;
+            font-feature-settings: 'salt' on;
+            font-family: variables.$font-title;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: -0.28px;
+            margin-bottom: 12px;
+    }
+                
+        
+                
+}
+

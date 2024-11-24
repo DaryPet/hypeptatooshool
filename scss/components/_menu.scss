@@ -1,0 +1,28 @@
+/* _menu.scss */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &__text {
+        font-family: variables.$font-primary;
+        font-size: 14px;
+        font-weight: variables.$font-weight-bold;
+        text-transform: uppercase;
+        color: variables.$white;
+    }
+
+    &__dots {
+        display: grid;
+        grid-template-columns: repeat(2, 6px);
+        grid-template-rows: repeat(2, 6px);
+        gap: 4px;
+
+        &__dot {
+            width: 6px;
+            height: 6px;
+            background-color: variables.$white;
+            border-radius: 50%;
+        }
+    }
+}

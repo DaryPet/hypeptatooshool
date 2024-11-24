@@ -1,0 +1,123 @@
+@use '../base/variables';
+
+.course-target {
+    padding: 50px 20px 108px 20px;
+    color: variables.$black;
+    background-color: #F9F9F9;
+
+    &__title {
+       
+        @media (max-width: 767px) {
+                display: none; 
+            }
+    }
+
+    &__groups {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+.group {
+    background-color: variables.$white;
+    border-radius: 22px;
+    width: 335px;
+    height: 272px;
+    padding: 39px 20px 52px 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+
+    &__number {
+        font-family: variables.$font-primary;
+        font-size: 14px;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$black;
+        line-height: 99%;
+        letter-spacing: -0.28px;
+        text-transform: uppercase;
+        span {
+            color: rgba(0, 0, 0, 0.33);
+
+        }
+    }
+
+    &__title {
+        font-family: variables.$font-title;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$black;
+        text-transform: uppercase;
+        font-size: 44px;
+        line-height: 99%;
+    }
+
+    &__text {
+        font-family: variables.$font-primary;
+        font-size: 14px;
+        letter-spacing: -0.42px;
+        font-style: normal;
+        font-weight: variables.$font-weight-semibold;
+        line-height: 144%;
+        width: 260px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+
+        @media (min-width: 768px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &--newbies {
+        background-color: #00d0d2;
+
+    }
+
+    &--young-professionals {
+        background-color: variables.$white;
+    }
+    &--warning {
+        color: variables.$white;
+        background-color: variables.$black;
+        padding: 79px 41px 20px 41px;
+        gap: 26px;
+        .group__icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 10.49px;
+            // margin-bottom: 26.46px;
+        }
+        .group__warning-icons{
+            width: 117.754px;
+                height: 11.076px;
+                flex-shrink: 0;
+
+        }
+        .group__warning-text {
+            text-align: center;
+            font-family: variables.$font-primary;
+            font-size: 14px;
+            font-weight: variables.$font-weight-semibold;
+            line-height: 1.5;
+            color: #FFF;
+            line-height: 144%;
+            letter-spacing: -0.42px;
+        }
+    }
+
+}
