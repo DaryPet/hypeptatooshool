@@ -7,12 +7,15 @@
     padding: 17px 20px;
     background-color: variables.$black;
     color: variables.$white;
+    color: white;
 
 &__logo {
         img {
         width: 27.141px;
             height: 32.015px;
             flex-shrink: 0;
+            color: white;
+            fill: white;
     }
 }
 
@@ -34,11 +37,8 @@
 
     &__dots {
         display: grid;
-        /* Используем grid для построения квадрата */
         grid-template-columns: repeat(2, 6px);
-        /* Два столбца */
         grid-template-rows: repeat(2, 6px);
-        /* Две строки */
         gap: 9.97px;
 
         &__dot {
@@ -48,6 +48,39 @@
             border-radius: 50%;
         }
 }
+}
+@media (min-width: 1920px) {
+    // max-width: 1920;
+    // margin: 0 auto;
+    padding: 60px 71px 0 71px;
+    background: transparent;
+    z-index: 20;
+    color: black;
+&__logo {
+        img {
+width: 65.276px;
+    height: 77.002px;
+        }
+    }
+    .menu{
+        &__text{
+            font-size: 47.243px;
+            color:black;
+        }
+                  &__dots {
+                    //   display: grid;
+                      grid-template-columns: repeat(2, 12px);
+                      grid-template-rows: repeat(2, 12px);
+                      gap: 18px;
+        
+                      &__dot {
+                          width: 12px;
+                          height: 12px;
+                          background-color: variables.$blue;
+                          border-radius: 50%;
+                      }
+                  }
+    }
+}
 
-
-}}
+}

@@ -1,4 +1,10 @@
 @use '../base/variables';
+@media (max-width: 768px) {
+    .nav-menu__logo {
+        display: none;
+        /* Скрыть логотип */
+    }
+}
 
 .hero {
     display: flex;
@@ -17,7 +23,7 @@
     height: 100%;
     flex-shrink: 0;
     margin: 0 auto;
-
+    
     &__top {
         display: flex;
         justify-content: center;
@@ -79,6 +85,7 @@
         margin-bottom: 51.86px;
     }
     .join-main-container {
+        position: relative; 
         display: flex;
         align-items: center;
         gap: 3px;
@@ -94,64 +101,71 @@
         width: 176px;
         height: 68px;
         &--modal {
-                width: 140px;
-                height: 55px; 
-            }
+            width: 140px;
+            height: 55px; 
+        }
     }
-        
-    
-        .join-course__text {
-            position: absolute;
-            top: 38%;
-            left: 15%;
-            font-family: variables.$font-primary;
-            font-weight: variables.$font-weight-bold;
-            font-size: 14px;
-            line-height: 100%;
-            letter-spacing: -0.42px;
-            color: variables.$black;
-            text-transform: uppercase;
-        }
-    
-        .join-course__arrow {
-            position: absolute;
-            width: 9.6px;
-            height: 9.6px;
+    .join-course-container:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .join-course__background {
+        width: 176px;
+        height: 68px;
+        background-image: url('../../images/rectangle.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-        }
+    .join-course__text {
+        position: absolute;
+        top: 38%;
+        left: 15%;
+        font-family: variables.$font-primary;
+        font-weight: variables.$font-weight-bold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.42px;
+        color: variables.$black;
+        text-transform: uppercase;
+    }
+    .join-course__arrow {
+        position: absolute;
+        width: 9.6px;
+        height: 9.6px;
+    }
     
-        .join-course__arrow--top-left {
-            top: 0;
-            left: 0;
-        }
+    .join-course__arrow--top-left {
+        top: 0;
+        left: 0;
+    }
     
-        .join-course__arrow--top-right {
-            top: 0;
-            right: 0;
-        }
+    .join-course__arrow--top-right {
+        top: 0;
+        right: 0;
+    }
     
-        .join-course__arrow--bottom-left {
-            bottom: 0;
-            left: 0;
-        }
+    .join-course__arrow--bottom-left {
+        bottom: 0;
+        left: 0;
+    }
     
-        .join-course__arrow--bottom-right {
-            bottom: 0;
-            right: 0;
-        }
-        .join-course-box {
-            position: relative;
-            width: 66.38px;
-            height: 66.38px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        .join-course-box:hover .join-course-box__background {
-            background-color: variables.$white;
-        }
-        .join-course-box__background {
+    .join-course__arrow--bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+    .join-course-box {
+        position: relative;
+        width: 66.38px;
+        height: 66.38px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .join-course-box:hover .join-course-box__background {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .join-course-box__background {
             position: absolute;
-            top: -15%;
+            top: -17%;
             left: 0;
             width: 66.38px;
             height: 66.38px;
@@ -169,4 +183,78 @@
             height: 12.99px;
             transition: fill 0.3s ease;
         }
+
+    @media (max-width: 375px) {
+        width: calc(90% + (100% - 90%) * ((100vw - 320px) / (375 - 320)));
+    }
+    @media (min-width: 376px) and (max-width: 1919px) {
+       width: 100%;
+    //    width:375px;
+    //    margin: 0 auto;
+    }
+    @media (min-width: 1920px) {
+        max-width: 1920px;
+        margin: 0 auto;
+        background: none;
+        padding: 110px 70px 105px 70px;
+        
+
+        &__title1{
+            width: 400px;
+            font-size: 66px;
+            letter-spacing: -1.32px;
+            padding: 0;
+            margin-bottom: 13px;
+            }
+        &__title2{
+            width: 933px;
+            font-size: 222.423px;
+            margin-bottom: 41px;
+            padding: 0;
+        }
+        &__top-text {
+            width: 251.195px;
+            font-size: 18.601px;
+            letter-spacing: -0.558px;
+        }
+        &__vector1{
+            width: 108.59px;
+            height: 40.558px;
+        }
+        &__vector2{
+            width: 81.115px;
+            height: 35.978px;
+        }
+        .join-main-container{
+            margin-top: 20px;
+        }
+        .join-course-container {
+            width: 320px;
+            height: 104px;
+        }
+        .join-course__background {
+            width: 320px;
+            height: 104px;
+            background-image: url('../../images/rectangle-desk-hero.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .join-course__text {
+            font-size: 22px;
+        }
+        .join-course-box {
+            width: 104px;
+            height: 104px;
+        }
+        .join-course-box__background {
+            top: -12%;
+            left: 0;
+            width: 104px;
+            height: 104px;
+        }
+        .join-course-box__arrow{
+            width:17.95px;
+            height: 20.34px;
+        }
+    }
 }

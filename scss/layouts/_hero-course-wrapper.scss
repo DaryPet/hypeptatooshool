@@ -1,0 +1,27 @@
+.layout-wrapper {
+    @media (min-width: 1920px) {
+        max-width: 1920px;
+        margin: 0 auto;
+        background-image: url('../../images/background-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative; 
+        &::before {
+            content: '';
+            position: absolute;
+            top: -140px; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            z-index: 0;
+        }
+    }
+}
+.header {
+    position: relative; 
+    z-index: 10;
+    max-width: 1920px;
+        margin: 0 auto;
+}

@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tatoo School</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <div class="header__logo">
         <img src="images/logo.svg" alt="Hype Tattoo School Logo" />
       </div>
-      <div class="menu" id="menu">
+      <div class="menu" id="menu" data-modal-target="nav-menu" >
+
         <p class="menu__text">MENU</p>
         <div class="menu__dots">
           <span class="menu__dots__dot"></span>
@@ -24,10 +26,13 @@
     <nav class="nav-menu" id="nav-menu">
       <div class="nav-menu__content">
         <div class="nav-header">
+           <div class="nav-menu__logo">
+        <img src="images/logo.svg" alt="Hype Tattoo School Logo" />
+      </div>
           <h2 class="nav-menu-text">[Menu]</h2>
           <div class="nav-menu-close-container">
-            <button class="nav-menu__close" id="menu-close">CLOSE</button>
-            <img src="images/close-icon.svg" alt="close icon" />
+            <button class="nav-menu__close" data-modal-close id="menu-close">CLOSE</button>
+            <img src="images/close-icon.svg" alt="close icon" data-modal-close/>
           </div>
         </div>
         <ul class="nav-menu__list">
@@ -93,6 +98,7 @@
       </div>
     </nav>
     <main>
+      <div class="layout-wrapper">
       <section class="hero">
         <div class="hero__top-vectors">
           <img
@@ -114,12 +120,9 @@
           <h2 class="hero__title2">Tattooing from scratch</h2>
         </div>
         <div class="join-main-container">
+          <a href="#consultation" class="join-course-box__link">
           <div class="join-course-container" id="join-course">
-            <img
-              src="images/rectangle.svg"
-              alt="Join the course background"
-              class="join-course__background"
-            />
+            <div class="join-course__background"></div>
             <p class="join-course__text">JOIN THE COURSE</p>
             <img
               src="images/angle2.svg"
@@ -152,7 +155,9 @@
             >
             </a>
           </div>
+        </a>
         </div>
+   
       </section>
       <section class="course-target">
         <h2 class="course-target__title">Who is this course for?</h2>
@@ -240,11 +245,11 @@
           </div>
         </div>
       </section>
+      </div>
       <section class="consultation"  id="consultation">
         <h2>Pick your path</h2>
       </section>
     </main>
-    <script src="js/nav-menu.js"></script>
-    <script src="js/scroll.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

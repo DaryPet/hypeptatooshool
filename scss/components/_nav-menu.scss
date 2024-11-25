@@ -1,4 +1,8 @@
 @use '../base/variables';
+
+    .nav-menu__logo {
+        display: none;
+}
 .nav-menu {
     position: fixed;
     top: 0;
@@ -223,9 +227,6 @@
             line-height: 100%;
             letter-spacing: -0.28px;
             margin-bottom: 12px;
-    }
-                
-        
-                
+    }              
 }
 
