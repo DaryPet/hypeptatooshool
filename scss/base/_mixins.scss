@@ -1,25 +1,35 @@
-@mixin respond($breakpoint) {
-    @if $breakpoint ==mobile {
-        @media (min-width: 375px) {
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
             @content;
         }
-
-        /* Мобільні від 375px */
     }
 
-    @if $breakpoint ==tablet {
-        @media (min-width: 768px) {
-            @content;
-        }
-
-        /* Планшети */
+    @else {
+        @warn "Breakpoint `#{$breakpoint}` not found!";
     }
+}
 
-    @if $breakpoint ==desktop {
-        @media (min-width: 1920px) {
-            @content;
-        }
+@mixin fluid-size($min, $max, $min-screen: 320px, $max-screen: 375px) {
+    $calc: $min + ($max - $min) * ((100vw - $min-screen) / ($max-screen - $min-screen));
+    font-size: calc(#{$calc});
+}
 
-        /* Десктопи */
+@mixin tablet {
+    @media (min-width: 376px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 769px) and (max-width: 1919px) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width: 1920px) {
+        @content;
     }
 }
