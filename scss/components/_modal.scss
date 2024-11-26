@@ -1,20 +1,20 @@
-@use '../base/variables';
+@use "../base/variables";
 
 .modal {
-    display: none;
+  display: none;
   position: fixed;
-top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-&.active {
-        display: flex;
-    }
+  &.active {
+    display: flex;
+  }
 
   .modal-content {
     top: 50%;
@@ -22,11 +22,10 @@ top: 50%;
     transform: translate(-50%, -50%);
     position: relative;
     width: 576px;
-    height: 90%;
-    background: url('/images/modal-form.svg') no-repeat center; 
+    background: url("/images/modal-form.svg") no-repeat center;
     background-size: cover;
     border-radius: 12px;
-    padding: 32px 44px 30px 32px ;
+    padding: 32px 44px 30px 32px;
     z-index: 1001;
     overflow: hidden;
 
@@ -37,29 +36,27 @@ top: 50%;
       background: transparent;
       border: none;
       cursor: pointer;
-    line-height: 0;
-      color:variables.$white;
+      line-height: 0;
+      color: variables.$white;
       z-index: 1002;
-    font-size: 28px;
+      font-size: 28px;
     }
 
     .modal-title {
-    color: #161616;
-    font-family: variables.$font-primary;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: variables.$font-weight-semibold;
-    line-height: 110%;
-    /* 35.2px */
-    letter-spacing: -0.64px;
-    margin-bottom: 54px;
+      color: #161616;
+      font-family: variables.$font-primary;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: variables.$font-weight-semibold;
+      line-height: 110%;
+      letter-spacing: -0.64px;
+      margin-bottom: 54px;
     }
-    .consultaion-form__wrapper{
-        display: flex;
-            flex-direction: column;
-            gap: 52px;
-            margin-bottom: 41.47px;
-
+    .consultaion-form__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 52px;
+      margin-bottom: 41.47px;
     }
 
     .consultation-form {
@@ -68,54 +65,48 @@ top: 50%;
         flex-direction: column;
 
         label {
-        color: variables.$black;
-        font-family: variables.$font-primary;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: variables.$font-weight-semibold;
-        line-height: 100%;
+          color: variables.$black;
+          font-family: variables.$font-primary;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: variables.$font-weight-semibold;
+          line-height: 100%;
         }
 
         input {
-        padding: 12px 0 0 0;
-            border: none; 
-            border-bottom: 1px solid black;
-            font-size: 16px;
-            font-family: 'Mona Sans', sans-serif;
-            color:variables.$black;
+          padding: 12px 0 0 0;
+          border: none;
+          border-bottom: 1px solid black;
+          font-size: 16px;
+          font-family: variables.$font-primary;
+          color: variables.$black;
           &:focus {
             outline: none;
             border-bottom-color: variables.$blue;
           }
         }
       }
-// .send-email-button-container{
-//     margin-bottom: 0;
-// }
       .privacy-policy {
         margin-top: 43px;
-width: 280px;
-color: var(--main-black-40, #A2A2A2);
-    font-family: "Mona Sans";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    /* 19.5px */
+        width: 280px;
+        color:  #a2a2a2;
+        font-family: variables.$font-primary;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 150%;
 
         a {
-        color: #00D0D2;
-            font-family: "Mona Sans";
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 150%;
-            text-decoration-line: underline;
-            text-decoration-style: solid;
-            text-decoration-skip-ink: none;
-            text-decoration-thickness: auto;
-            text-underline-offset: auto;
-            text-underline-position: from-font;
+          color: variables.$blue;
+          font-family: variables.$font-primary;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 150%;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: none;
+          text-decoration-thickness: auto;
+          text-underline-offset: auto;
+          text-underline-position: from-font;
 
           &:hover {
             text-decoration: underline;

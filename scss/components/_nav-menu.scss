@@ -117,7 +117,6 @@
       justify-content: center;
       gap: 3px;
       height: 68px;
-      // padding: 0 20px 0 20px;
       margin-bottom: 52px;
     }
     .join-course__background--modal {
@@ -207,7 +206,7 @@
       transition: fill 0.3s ease;
       background-image: url("../../images/arrow-white.svg");
       background-size: cover;
-        background-repeat: no-repeat;
+      background-repeat: no-repeat;
     }
   }
   &__contact {
@@ -236,9 +235,8 @@
 @media (min-width: 1920px) {
   .nav-menu__logo {
     display: block;
-width: 65.276px;
+    width: 65.276px;
     height: 77.002px;
-
   }
   .nav-menu__logo img {
     width: 65px;
@@ -251,9 +249,9 @@ width: 65.276px;
     align-items: flex-start;
     gap: 158px;
   }
-  .nav-menu__header-container{
+  .nav-menu__header-container {
     display: flex;
-    gap:130px;
+    gap: 130px;
   }
 
   .nav-menu {
@@ -261,7 +259,7 @@ width: 65.276px;
       padding: 76px 70px;
     }
     .nav-header {
-   width: 100%;
+      width: 100%;
       margin-bottom: 66px;
 
       .nav-menu-text {
@@ -314,7 +312,7 @@ width: 65.276px;
         font-size: 198px;
         letter-spacing: -3.96px;
       }
-      .join-main-container--modal{
+      .join-main-container--modal {
         justify-content: left;
         padding: 0;
       }
@@ -338,11 +336,6 @@ width: 65.276px;
         letter-spacing: -0.78px;
       }
 
-      // .join-course__arrow {
-      //   width: 17.5px;
-      //   height: 17.5px;
-      // }
-
       .join-course-box--modal {
         width: 121px;
         height: 121px;
@@ -363,29 +356,26 @@ width: 65.276px;
         width: 20.89px;
         height: 23.67px;
         transition: fill 0.3s ease;
-        
       }
     }
 
     &__contact {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 90px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
     }
 
     &__mail {
-    font-size: 44px;
-    letter-spacing: -1.32px;
-
-
+      font-size: 44px;
+      letter-spacing: -1.32px;
     }
 
     &__legal {
-        text-align: end;
+      text-align: end;
       font-size: 16px;
       font-weight: 500;
       line-height: 100%;
-    letter-spacing: -0.32px;
+      letter-spacing: -0.32px;
       margin-bottom: 12px;
     }
   }

@@ -87,7 +87,7 @@ body {
   gap: 9.74px;
 }
 .header .menu__text {
-  color: #FFF;
+  color: #fff;
   font-family: "Druk Cyr", sans-serif;
   font-size: 26.165px;
   font-weight: 700;
@@ -385,7 +385,7 @@ body {
 .course-target {
   padding: 50px 20px 108px 20px;
   color: #000000;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 @media (max-width: 1919px) {
   .course-target__title {
@@ -421,6 +421,21 @@ body {
     margin: 0 auto;
   }
 }
+.group .group__icon--young-professionals {
+  background-image: url("../../images/young-proffessionals.svg");
+  width: 44px;
+  height: 44px;
+}
+.group .group__icon--advanced {
+  background-image: url("../../images/advanced-learners.svg");
+  width: 44px;
+  height: 53px;
+}
+.group .group__icon--veterans {
+  background-image: url("../../images/tattoo-veterans.svg");
+  width: 44px;
+  height: 44px;
+}
 .group__number {
   font-family: "Mona Sans", sans-serif;
   font-size: 14px;
@@ -454,11 +469,7 @@ body {
   position: absolute;
   top: 28px;
   right: 30px;
-  width: 44px;
-  height: 44px;
   flex-shrink: 0;
-  color: #FFFFFF;
-  fill: black;
 }
 .group--newbies {
   background-color: #00D0D2;
@@ -488,7 +499,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
-  color: #FFF;
+  color: #FFFFFF;
   line-height: 144%;
   letter-spacing: -0.42px;
 }
@@ -524,9 +535,9 @@ body {
     box-sizing: border-box;
     flex-shrink: 0;
     border-radius: 22px;
-    border: 3px solid #FFF;
+    border: 3px solid #fff;
     background: transparent;
-    color: white;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -545,9 +556,6 @@ body {
   }
   .group__title {
     color: #FFFFFF;
-  }
-  .group__icon {
-    fill: white;
   }
   .group--newbies {
     background-color: #FFFFFF;
@@ -575,12 +583,27 @@ body {
     width: 291px;
     margin-bottom: 28px;
   }
+  .group .group__icon--young-professionals {
+    background-image: url("../../images/young-professionals-white.svg");
+    width: 63px;
+    height: 63px;
+    flex-shrink: 0;
+  }
+  .group .group__icon--advanced {
+    background-image: url("../../images/advanced-leanrer-white.svg");
+    width: 49px;
+    height: 59px;
+    flex-shrink: 0;
+  }
+  .group .group__icon--veterans {
+    background-image: url("../../images/tatoo-veterans-white.svg");
+    width: 61px;
+    height: 63px;
+    flex-shrink: 0;
+  }
   .group--young-professionals {
     grid-column: 2;
     grid-row: 1;
-  }
-  .group--young-professionals .group__icon {
-    fill: white;
   }
   .group--advanced {
     grid-column: 3;
@@ -589,12 +612,6 @@ body {
   .group--veterans {
     grid-column: 4;
     grid-row: 1;
-  }
-  .group--veterans .group__icon {
-    width: 210px;
-    height: 210px;
-    top: 220px;
-    right: 200px;
   }
   .group--warning {
     grid-column: 2;
@@ -986,15 +1003,18 @@ body {
   .pick-path {
     max-width: 1920px;
     margin: 0 auto;
-    background: #F9F9F9;
+    background: #f9f9f9;
     padding: 220px 71px;
+  }
+  .pick-path__features--head img {
+    fill: white !important;
+    width: 400px;
   }
   .pick-path__title {
     text-align: center;
     color: #000000;
     font-family: "Druk Cyr", sans-serif;
     font-size: 133px;
-    font-style: normal;
     font-weight: 600;
     line-height: 99%;
     text-transform: uppercase;
@@ -1030,7 +1050,7 @@ body {
     flex-shrink: 0;
   }
   .pick-path__card-title {
-    font-family: "Mona Sans";
+    font-family: "Mona Sans", sans-serif;
     font-size: 55px;
     font-style: normal;
     font-weight: 700;
@@ -1054,7 +1074,6 @@ body {
   .pick-path__list-text {
     font-family: "Mona Sans", sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.48px;
@@ -1062,7 +1081,6 @@ body {
   .pick-path__list-decription {
     font-family: "Mona Sans", sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     opacity: 0.66;
@@ -1070,7 +1088,6 @@ body {
   .pick-path__price {
     font-family: Inter;
     font-size: 86.308px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: -1.726px;
@@ -1079,7 +1096,6 @@ body {
   .pick-path__price-old {
     font-family: Inter;
     font-size: 43.154px;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: -0.863px;
@@ -1094,7 +1110,6 @@ body {
     justify-content: space-between;
     font-family: "Mona Sans", sans-serif;
     font-size: 17.33px;
-    font-style: normal;
     font-weight: 300;
     line-height: 130%;
     letter-spacing: -0.52px;
@@ -1122,7 +1137,6 @@ body {
   transform: translate(-50%, -50%);
   position: relative;
   width: 576px;
-  height: 90%;
   background: url("/images/modal-form.svg") no-repeat center;
   background-size: cover;
   border-radius: 12px;
@@ -1149,7 +1163,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
-  /* 35.2px */
   letter-spacing: -0.64px;
   margin-bottom: 54px;
 }
@@ -1186,19 +1199,16 @@ body {
 .modal .modal-content .consultation-form .privacy-policy {
   margin-top: 43px;
   width: 280px;
-  color: var(--main-black-40, #A2A2A2);
-  font-family: "Mona Sans";
+  color: #a2a2a2;
+  font-family: "Mona Sans", sans-serif;
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  /* 19.5px */
 }
 .modal .modal-content .consultation-form .privacy-policy a {
   color: #00D0D2;
-  font-family: "Mona Sans";
+  font-family: "Mona Sans", sans-serif;
   font-size: 13px;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   text-decoration-line: underline;

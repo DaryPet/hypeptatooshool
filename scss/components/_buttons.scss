@@ -1,124 +1,115 @@
-@use '../base/variables';
-
-
-// .button-wrapper {
-//     margin-bottom: 0;
-//     &:last-child {
-//         margin-bottom: 50px; 
-//     }}
+@use "../base/variables";
 
 .button-main-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .button-course-container {
-    position: relative;
-    display: inline-block;
-    width: 371px;
-    height: 121px;
-    flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 371px;
+  height: 121px;
+  flex-shrink: 0;
 
-    &:hover {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .button-course__background {
-    width: 371px;
-    height: 121px;
-    flex-shrink: 0;
-    background-image: url('../../images/rectangle-pick-desktop.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  width: 371px;
+  height: 121px;
+  flex-shrink: 0;
+  background-image: url("../../images/rectangle-pick-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .button-course__text {
-    position: absolute;
-    top: 50%;
-        left: 45%;
-        transform: translate(-40%, -40%);
-        
-    font-family: variables.$font-primary;
-    font-weight: variables.$font-weight-bold;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: -0.42px;
-    color: variables.$black;
-    text-transform: uppercase;
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.42px;
+  color: variables.$black;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .button-course__arrow {
-    position: absolute;
-    width: 17.5px;
-    height: 17.5px;
+  position: absolute;
+  width: 17.5px;
+  height: 17.5px;
 
-    &--top-left {
-        top: 0;
-        left: 0;
-    }
+  &--top-left {
+    top: 0;
+    left: 0;
+  }
 
-    &--top-right {
-        top: 0;
-        right: 0;
-    }
+  &--top-right {
+    top: 0;
+    right: 0;
+  }
 
-    &--bottom-left {
-        bottom: 0;
-        left: 0;
-    }
+  &--bottom-left {
+    bottom: 0;
+    left: 0;
+  }
 
-    &--bottom-right {
-        bottom: 0;
-        right: 0;
-    }
+  &--bottom-right {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .button-course-box {
-    position: relative;
-    width: 121px;
-    height: 121px;
-    margin-top: 20px;
-    cursor: pointer;
+  position: relative;
+  width: 121px;
+  height: 121px;
+  margin-top: 20px;
+  cursor: pointer;
 
-    &:hover .button-course-box__background {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+  &:hover .button-course-box__background {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .button-course-box__background {
-    position: absolute;
-    top: -8%;
-    left: 0;
-    width: 121px;
-    height: 121px;
-    flex-shrink: 0;
-    background-color: variables.$blue;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  top: -8%;
+  left: 0;
+  width: 121px;
+  height: 121px;
+  flex-shrink: 0;
+  background-color: variables.$blue;
+  transition: background-color 0.3s ease;
 }
 
 .button-course-box__arrow {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20.89px;
-    height: 23.67px;
-    transition: fill 0.3s ease;
-    stroke: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20.89px;
+  height: 23.67px;
+  transition: fill 0.3s ease;
+  stroke: white;
 }
-.pick-path__card--hyper{
-
-.button-course-box__background {
-        background-color: variables.$black;
-    }
+.pick-path__card--hyper {
+  .button-course-box__background {
+    background-color: variables.$black;
+  }
 }
-.pick-path__card--blast{
-    .button-course-container{
-        background: white;
-    }
+.pick-path__card--blast {
+  .button-course-container {
+    background: white;
+  }
 }

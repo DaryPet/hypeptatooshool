@@ -1,86 +1,81 @@
-@use '../base/variables';
+@use "../base/variables";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 20px;
-    background-color: variables.$black;
-    color: variables.$white;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 20px;
+  background-color: variables.$black;
+  color: variables.$white;
+  color: white;
 
-&__logo {
-        img {
-        width: 27.141px;
-            height: 32.015px;
-            flex-shrink: 0;
-            color: white;
-            fill: white;
+  &__logo {
+    img {
+      width: 27.141px;
+      height: 32.015px;
+      flex-shrink: 0;
+      color: white;
+      fill: white;
     }
-}
+  }
 
-
-.menu {
+  .menu {
     display: flex;
     align-items: center;
     gap: 9.74px;
 
     &__text {
-    color: #FFF;
-        font-family: variables.$font-title;
-        font-size: 26.165px;
-        font-weight: variables.$font-weight-bold;
-        line-height: 91.5%;
-        letter-spacing: -0.523px;
-        text-transform: uppercase;
+      color: #fff;
+      font-family: variables.$font-title;
+      font-size: 26.165px;
+      font-weight: variables.$font-weight-bold;
+      line-height: 91.5%;
+      letter-spacing: -0.523px;
+      text-transform: uppercase;
     }
 
     &__dots {
-        display: grid;
-        grid-template-columns: repeat(2, 6px);
-        grid-template-rows: repeat(2, 6px);
-        gap: 9.97px;
+      display: grid;
+      grid-template-columns: repeat(2, 6px);
+      grid-template-rows: repeat(2, 6px);
+      gap: 9.97px;
 
-        &__dot {
-            width: 6.65px;
-            height: 6.65px;
-            background-color: variables.$blue;
-            border-radius: 50%;
-        }
-}
-}
-@media (min-width: 1920px) {
-    // max-width: 1920;
-    // margin: 0 auto;
+      &__dot {
+        width: 6.65px;
+        height: 6.65px;
+        background-color: variables.$blue;
+        border-radius: 50%;
+      }
+    }
+  }
+  @media (min-width: 1920px) {
     padding: 60px 71px 0 71px;
     background: transparent;
     z-index: 20;
     color: black;
-&__logo {
-        img {
-width: 65.276px;
-    height: 77.002px;
-        }
+    &__logo {
+      img {
+        width: 65.276px;
+        height: 77.002px;
+      }
     }
-    .menu{
-        &__text{
-            font-size: 47.243px;
-            color:black;
-        }
-                  &__dots {
-                    //   display: grid;
-                      grid-template-columns: repeat(2, 12px);
-                      grid-template-rows: repeat(2, 12px);
-                      gap: 18px;
-        
-                      &__dot {
-                          width: 12px;
-                          height: 12px;
-                          background-color: variables.$blue;
-                          border-radius: 50%;
-                      }
-                  }
-    }
-}
+    .menu {
+      &__text {
+        font-size: 47.243px;
+        color: black;
+      }
+      &__dots {
+        grid-template-columns: repeat(2, 12px);
+        grid-template-rows: repeat(2, 12px);
+        gap: 18px;
 
+        &__dot {
+          width: 12px;
+          height: 12px;
+          background-color: variables.$blue;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
