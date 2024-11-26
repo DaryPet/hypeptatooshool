@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const linksToConsultation = document.querySelectorAll(
-    "[data-target='consultation']"
+    "[data-target='pick-path']"
   );
   linksToConsultation.forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const modalElement = link.closest(".modal") || link.closest(".nav-menu");
       closeModal(modalElement);
       document
-        .getElementById("consultation")
+        .getElementById("pick-path")
         .scrollIntoView({ behavior: "smooth" });
     });
   });

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   linksToConsultation.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      const targetSection = document.querySelector("#consultation");
+      const targetSection = document.querySelector("#pick-path");
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
