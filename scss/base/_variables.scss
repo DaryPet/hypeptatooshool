@@ -13,6 +13,8 @@ $background-blue:$blue;
 $font-primary: 'Mona Sans', sans-serif;
 $font-title: 'Druk Cyr', sans-serif;
 
+$font-weight-light: 300;
+$font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -21,6 +23,5 @@ $font-weight-extrabold: 800;
 
 $breakpoints: (
     mobile: 375px,
-    tablet: 768px,
     desktop: 1920px
 );

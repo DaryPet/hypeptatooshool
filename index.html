@@ -25,16 +25,20 @@
     </header>
     <nav class="nav-menu" id="nav-menu">
       <div class="nav-menu__content">
-        <div class="nav-header">
+        <div class="nav-menu__header-container">
            <div class="nav-menu__logo">
         <img src="images/logo.svg" alt="Hype Tattoo School Logo" />
       </div>
+        <div class="nav-header">
           <h2 class="nav-menu-text">[Menu]</h2>
           <div class="nav-menu-close-container">
             <button class="nav-menu__close" data-modal-close id="menu-close">CLOSE</button>
-            <img src="images/close-icon.svg" alt="close icon" data-modal-close/>
+            
+            <img src="images/close-icon.svg" alt="close icon" data-modal-close class="nav-menu__close-icon"/>
           </div>
         </div>
+        </div>
+        <div class="nav-menu__main-container">
         <ul class="nav-menu__list">
           <li class="nav-menu__item"><a href="#">GIFT BOX</a></li>
           <li class="nav-menu__item active">
@@ -79,21 +83,21 @@
               class="join-course__arrow join-course__arrow--bottom-right join-course__arrow--modal"
             />
           </div>
-          <div class="join-course-box join-course-box--modal" id="join-course-arrow" data-target="consultation">
+
+          <div class="join-course-box join-course-box--modal" id="join-course-arrow" data-target="pick-path">
             <div class="join-course-box__background join-course-box__background--modal"></div>
-            <a href="#consultation" class="join-course-box__link">
-            <img
-              src="images/arrow.svg"
-              alt="Arrow"
-              class="join-course-box__arrow join-course-box__arrow--modal"
-            >
+            <a href="#pick-path" class="join-course-box__link">
+            <div class="join-course-box__arrow join-course-box__arrow--modal"></div>
             </a>
             </div>
           </div>
       <div class="nav-menu__contact">
         <p class="nav-menu__mail">HYPETATTOO@GMAIL.COM</p>
+        <div class="nav-menu__legal-container">
         <p class="nav-menu__legal">(C) HYPE 2024</p>
         <p class="nav-menu__legal">ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
       </div>
       </div>
     </nav>
@@ -246,10 +250,109 @@
         </div>
       </section>
       </div>
-      <section class="consultation"  id="consultation">
-        <h2>Pick your path</h2>
+      <section class="pick-path"  id="pick-path">
+        <div class="container">
+    <h2 class="pick-path__title">Pick Your Path</h2>
+    <div class="pick-path__cards">
+
+      <!-- Карточка Quantum -->
+      <div class="pick-path__card pick-path__card--quantum">
+        <div class="pick-path__card-header">
+          <h3 class="pick-path__card-title">Quantum</h3>
+          <img src="./images/path-logo1.svg" alt="logo one">
+          </div>
+          <div class="pick-path__list-container"></div>
+          <div>
+            <p class="pick-path__price">2990$</p>
+            <p class="pick-path__price-old">3990$</p>
+          </div>
+          <!-- <div class="button-container join-wrapper"></div> -->
+            <div class="proceed-button-container "></div>
+            <div class="consultation-button-container "></div>
+          <div class="pick-path__choose">
+            <p class="pick-path_choose-num">[ 001 ]</p>
+            <p class="pick-path__choose-text">[ choose ] </p>
+          </div>
+      </div>
+
+      <!-- Карточка Hyper -->
+      <div class="pick-path__card pick-path__card--hyper">
+        <div class="pick-path__card-header">
+          <h3 class="pick-path__card-title">Hyper</h3>
+          <img src="./images/path-logo2.svg" alt="logo one">
+          </div>
+          <div class="pick-path__list-container"></div>
+          <div>
+            <p class="pick-path__price">3990$</p>
+            <p class="pick-path__price-old">5090$</p>
+          </div>
+             <!-- <div class="button-container join-wrapper"></div> -->
+            <div class="proceed-button-container "></div>
+            <div class="consultation-button-container "></div>
+
+          <div class="pick-path__choose">
+            <p class="pick-path_choose-num">[ 002 ]</p>
+            <p class="pick-path__choose-text">[ choose ] </p>
+        </div>
+      </div>
+
+      <!-- Карточка Blast -->
+      <div class="pick-path__card pick-path__card--blast">
+        <div class="pick-path__card-header">
+          <h3 class="pick-path__card-title">Blast</h3>
+          <img src="./images/path-logo3.svg" alt="logo one">
+          </div>
+<div class="pick-path__main-container">
+        <div class="pick-path__list-container"></div>
+          <div>
+            <p class="pick-path__price">6990$</p>
+            <p class="pick-path__price-old">8990$</p>
+         </div>
+         <!-- <div class="button-container join-wrapper"></div> -->
+          <div class="proceed-button-container"></div>
+<div class="consultation-button-container"></div>
+        <div class="pick-path__choose">
+          <p class="pick-path_choose-num">[ 003 ]</p>
+          <p class="pick-path__choose-text">[ choose ] </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
       </section>
     </main>
+<div id="consultation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal-close>&times;</span>
+        <h2 class="modal-title">Ask a Question</h2>
+        <form class="consultation-form" id="consultation-form">
+          <div class="consultaion-form__wrapper">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Phone Number*</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+            </div>
+            </div>
+                <div class="send-email-button-container"></div>
+
+            <p class="privacy-policy">
+                By sending this form I confirm that I have read and accept the 
+                <a href="#">Privacy Policy</a>
+            </p>
+        </form>
+    </div>
+</div>
+
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

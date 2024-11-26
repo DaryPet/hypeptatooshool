@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-// .container{
-//     margin: 0 auto;
-// }
+
 html,
 body {
     height: 100%;
@@ -14,4 +12,7 @@ body {
 *::before,
 *::after {
     box-sizing: border-box;
+}
+ul {
+    text-decoration: none;
 }
