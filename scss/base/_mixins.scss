@@ -1,35 +1,35 @@
 
-@mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        @media (min-width: map-get($breakpoints, $breakpoint)) {
-            @content;
-        }
-    }
+// @mixin respond-to($breakpoint) {
+//     @if map-has-key($breakpoints, $breakpoint) {
+//         @media (min-width: map-get($breakpoints, $breakpoint)) {
+//             @content;
+//         }
+//     }
 
-    @else {
-        @warn "Breakpoint `#{$breakpoint}` not found!";
-    }
-}
+//     @else {
+//         @warn "Breakpoint `#{$breakpoint}` not found!";
+//     }
+// }
 
-@mixin fluid-size($min, $max, $min-screen: 320px, $max-screen: 375px) {
-    $calc: $min + ($max - $min) * ((100vw - $min-screen) / ($max-screen - $min-screen));
-    font-size: calc(#{$calc});
-}
+// @mixin fluid-size($min, $max, $min-screen: 320px, $max-screen: 375px) {
+//     $calc: $min + ($max - $min) * ((100vw - $min-screen) / ($max-screen - $min-screen));
+//     font-size: calc(#{$calc});
+// }
 
-@mixin tablet {
-    @media (min-width: 376px) and (max-width: 768px) {
-        @content;
-    }
-}
+// @mixin tablet {
+//     @media (min-width: 376px) and (max-width: 768px) {
+//         @content;
+//     }
+// }
 
-@mixin desktop {
-    @media (min-width: 769px) and (max-width: 1919px) {
-        @content;
-    }
-}
+// @mixin desktop {
+//     @media (min-width: 769px) and (max-width: 1919px) {
+//         @content;
+//     }
+// }
 
-@mixin large-desktop {
-    @media (min-width: 1920px) {
-        @content;
-    }
-}
+// @mixin large-desktop {
+//     @media (min-width: 1920px) {
+//         @content;
+//     }
+// }
