@@ -134,7 +134,7 @@ body {
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 768px) {
   .nav-menu__logo {
     display: none;
   }
@@ -420,11 +420,6 @@ body {
     margin: 0 auto;
   }
 }
-.group .group__icon--newbies {
-  background-image: url("../../images/newbies.svg");
-  width: 44px;
-  height: 44px;
-}
 .group .group__icon--young-professionals {
   background-image: url("../../images/young-proffessionals.svg");
   width: 44px;
@@ -516,7 +511,6 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 25.53%, #000 100%);
   }
   .course-target__title {
-    z-index: 100;
     font-family: "Druk Cyr", sans-serif;
     font-size: 133px;
     font-weight: 700;
@@ -575,20 +569,18 @@ body {
   .group--newbies .group__number span {
     color: rgba(0, 0, 0, 0.33);
   }
+  .group--newbies .group__icon {
+    width: 210px;
+    height: 210px;
+    top: 220px;
+    right: 200px;
+  }
   .group--newbies .group__title {
     color: #000000;
   }
   .group--newbies .group__text {
     width: 291px;
     margin-bottom: 28px;
-  }
-  .group .group__icon--newbies {
-    background-image: url("../../images/newbies.svg");
-    background-repeat: no-repeat;
-    width: 210px;
-    height: 210px;
-    top: 20px;
-    right: 10px;
   }
   .group .group__icon--young-professionals {
     background-image: url("../../images/young-professionals-white.svg");
@@ -1001,13 +993,6 @@ body {
   margin: 0 auto;
 }
 
-.course-target {
-  position: relative;
-  z-index: 20;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 @media (max-width: 1919px) {
   .pick-path {
     display: none;
@@ -1019,6 +1004,10 @@ body {
     margin: 0 auto;
     background: #f9f9f9;
     padding: 220px 71px;
+  }
+  .pick-path__features--head img {
+    fill: white !important;
+    width: 400px;
   }
   .pick-path__title {
     text-align: center;
@@ -1048,9 +1037,6 @@ body {
   .pick-path__card--blast {
     background: #000000;
     color: #FFFFFF;
-  }
-  .pick-path__card--blast .pick-path__features--head svg {
-    fill: white;
   }
   .pick-path__card-header {
     display: flex;
@@ -1329,6 +1315,7 @@ body {
   width: 20.89px;
   height: 23.67px;
   transition: fill 0.3s ease;
+  stroke: white;
 }
 
 .pick-path__card--hyper .button-course-box__background {
@@ -1336,7 +1323,7 @@ body {
 }
 
 .pick-path__card--blast .button-course-container {
-  background: #FFFFFF;
+  background: white;
 }
 
 /*# sourceMappingURL=main.css.map */
