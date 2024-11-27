@@ -8,10 +8,11 @@
 
 @media (min-width: 1920px) {
   .pick-path {
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
     background: #f9f9f9;
     padding: 220px 71px;
+    
   }
 
 
@@ -26,7 +27,7 @@
     margin-bottom: 83px;
   }
   .pick-path__cards {
-    width: 557px;
+    width: 100%;
     display: flex;
     gap: 53px;
   }

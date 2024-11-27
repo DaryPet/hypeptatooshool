@@ -1,6 +1,6 @@
 .layout-wrapper {
   @media (min-width: 1920px) {
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
     background-image: url("../../images/background-desktop.png");
     background-size: cover;
@@ -22,12 +22,15 @@
 .header {
   position: relative;
   z-index: 10;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .course-target{
   position: relative;
     z-index: 20;
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
+}
+.pick-path{
+  max-width: 100%;
 }
