@@ -13,10 +13,7 @@
     background: #f9f9f9;
     padding: 220px 71px;
   }
-  .pick-path__features--head img {
-    fill: white !important;
-    width: 400px;
-  }
+
 
   .pick-path__title {
     text-align: center;
@@ -47,6 +44,10 @@
   .pick-path__card--blast {
     background: variables.$black;
     color: variables.$white;
+       .pick-path__features--head svg{
+        fill: white;
+      }
+
   }
   .pick-path__card-header {
     display: flex;
