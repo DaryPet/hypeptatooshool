@@ -38,13 +38,13 @@
   }
   .group__icon--newbies{
     background-image: url("../../images/newbies.svg");
-    // background-repeat: no-repeat;
+
     width: 44px;
     height: 44px;
-        position: absolute;
-          top: 28px;
-          right: 30px;
-          flex-shrink: 0;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    flex-shrink: 0;
   }
   .group__icon--young-professionals {
     background-image: url("../../images/young-proffessionals.svg");
@@ -149,6 +149,7 @@
       letter-spacing: -2.66px;
       text-transform: uppercase;
       margin-bottom: 41px;
+     
     }
   }
 
@@ -158,12 +159,12 @@
     grid-template-rows: repeat(2, auto);
     justify-content: center;
     gap: 0px;
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .group {
-    width: 445px;
+    width: 100%;
     height: 245px;
     box-sizing: border-box;
     flex-shrink: 0;
