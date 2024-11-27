@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const buttonTemplate = (text, dataAction) => `
    <div class="button-wrapper">
     <div class="button-main-container button-main-container--modal">
-      <div class="button-course-container" >
+      <div class="button-course-container" data-action="${dataAction}">
        <div class="button-course__background" ></div>
         <p class="button-course__text button-course__text--modal" data-action="${dataAction}">${text}</p>
         <img

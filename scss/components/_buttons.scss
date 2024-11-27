@@ -101,7 +101,6 @@
   width: 20.89px;
   height: 23.67px;
   transition: fill 0.3s ease;
-  stroke: white;
 }
 .pick-path__card--hyper {
   .button-course-box__background {
@@ -110,6 +109,6 @@
 }
 .pick-path__card--blast {
   .button-course-container {
-    background: white;
+    background: variables.$white;
   }
 }

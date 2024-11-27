@@ -8,7 +8,7 @@
   &__title {
     @media (max-width: 1919px) {
       display: none;
-    }
+    }  
   }
 
   &__groups {
@@ -35,6 +35,11 @@
   @media (width: 375px) {
     width: 335px;
     margin: 0 auto;
+  }
+  .group__icon--newbies{
+    background-image: url("../../images/newbies.svg");
+    width: 44px;
+    height: 44px;
   }
   .group__icon--young-professionals {
     background-image: url("../../images/young-proffessionals.svg");
@@ -131,6 +136,7 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 25.53%, #000 100%);
 
     &__title {
+      z-index: 100;
       font-family: variables.$font-title;
       font-size: 133px;
       font-weight: variables.$font-weight-bold;
@@ -193,12 +199,6 @@
           color: rgba(0, 0, 0, 0.33);
         }
       }
-      .group__icon {
-        width: 210px;
-        height: 210px;
-        top: 220px;
-        right: 200px;
-      }
       .group__title {
         color: variables.$black;
       }
@@ -206,6 +206,14 @@
         width: 291px;
         margin-bottom: 28px;
       }
+    }
+    .group__icon--newbies {
+      background-image: url("../../images/newbies.svg");
+      background-repeat: no-repeat;
+      width: 210px;
+      height: 210px;
+      top: 20px;
+        right: 10px;
     }
     .group__icon--young-professionals {
       background-image: url("../../images/young-professionals-white.svg");
