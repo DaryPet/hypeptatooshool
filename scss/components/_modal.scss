@@ -1,5 +1,6 @@
 @use "../base/variables";
 
+
 .modal {
   display: none;
   position: fixed;
@@ -116,3 +117,23 @@
     }
   }
 }
+ @media (max-width: 576px) {
+   .modal-content {
+     max-width: 320px;
+     padding: 20px;
+
+}
+.modal .modal-content .close {
+  color: variables.$black;
+
+}
+}
+
+
+ @media (min-width: 600px) {
+   .modal-content {
+     max-width: 576px;
+   }
+ }
+
+ 
