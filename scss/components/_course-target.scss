@@ -38,8 +38,13 @@
   }
   .group__icon--newbies{
     background-image: url("../../images/newbies.svg");
+    // background-repeat: no-repeat;
     width: 44px;
     height: 44px;
+        position: absolute;
+          top: 28px;
+          right: 30px;
+          flex-shrink: 0;
   }
   .group__icon--young-professionals {
     background-image: url("../../images/young-proffessionals.svg");
@@ -209,11 +214,12 @@
     }
     .group__icon--newbies {
       background-image: url("../../images/newbies.svg");
-      background-repeat: no-repeat;
+      // background-repeat: no-repeat;
+      //   position: absolute;
       width: 210px;
       height: 210px;
-      top: 20px;
-        right: 10px;
+      top: 250px;
+        right: 200px;
     }
     .group__icon--young-professionals {
       background-image: url("../../images/young-professionals-white.svg");
