@@ -1238,6 +1238,20 @@ body {
   text-decoration: underline;
 }
 
+@media (max-width: 576px) {
+  .modal-content {
+    max-width: 320px;
+    padding: 20px;
+  }
+  .modal .modal-content .close {
+    color: #000000;
+  }
+}
+@media (min-width: 600px) {
+  .modal-content {
+    max-width: 576px;
+  }
+}
 .button-main-container {
   position: relative;
   display: flex;
@@ -1340,6 +1354,12 @@ body {
 
 .pick-path__card--blast .button-course-container {
   background: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .button-course-container {
+    width: 55%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

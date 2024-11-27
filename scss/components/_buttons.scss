@@ -112,3 +112,8 @@
     background: variables.$white;
   }
 }
+ @media (max-width: 576px) {
+  .button-course-container{
+    width:55%;
+  }
+ }
